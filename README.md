@@ -1,0 +1,1 @@
+Esta pagina web funciona como un catalogo muestra los productos de una array con diccionarios dentro de el un paginador y badge control para mostrar los diferentes productos su idea final es crearla con servicio de base de datos hecho por leonardo mendez practicando y emprendiendo
