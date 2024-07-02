@@ -6,6 +6,7 @@
     --text-color:#0D0D0D;
     --hover-btn:#A3BD9D;
   }
+
 body{
     background-color: #eee9e9;
 }
@@ -649,7 +650,7 @@ body{
 .modal-select .addCartSelect {
     width: 100%;
     padding: 10px;
-    background: rgb(15, 145, 73);
+    background: rgb(15, 145, 73) ;
     border-radius: 10px;
     transition: background .3s ease;
 }
@@ -676,7 +677,6 @@ body{
 .shortcuts {
     width: 100%;
     height: auto;
-    margin-top: 78em;
     border: 1px solid var(--border-color);
     color: var(--text-color);
     margin-bottom: 52px;
@@ -1208,7 +1208,7 @@ body{
 }
 @media (min-width: 300px) {
     .shortcuts{
-        margin-top: 77em;
+        margin-top: 80em;
     }
     .modal-select{
         top: 1.5rem;
