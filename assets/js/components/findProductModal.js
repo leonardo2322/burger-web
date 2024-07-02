@@ -25,7 +25,7 @@ export const findProductModal = () => {
                 <span class="close-modal"><i class="fa-solid fa-xmark"></i></span>
             </div>
             <div class="modal-body-select">
-                <img src=".${product.imagen}" alt="${product.titulo}">
+                <img src="${product.imagen}" alt="${product.titulo}">
                 <div class="modal__content-select">
                     <h3>${product.titulo}</h3>
                     <span>${numberToCurrency(product.precio)}</span>
