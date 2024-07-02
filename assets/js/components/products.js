@@ -1,6 +1,6 @@
 import { items } from '../data/data.js'
 import { standard } from '../helpers/optionsNavigation.js';
-import { cart, renderCart } from './cart.js'
+import { cart} from './cart.js'
 import { pagination } from './paginations.js'
 
 export const db = {
@@ -105,6 +105,7 @@ export const db = {
             
         },
         getAll: () => {
+            
             return db.items;
         },
         remove: (items) => {
@@ -157,7 +158,6 @@ export const renderProducts = () => {
         options = standard;
         window.localStorage.setItem('options', JSON.stringify(options));
     }
-    window.localStorage.setItem('products', JSON.stringify(db.items))
     
     
     pagination()
