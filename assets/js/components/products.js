@@ -4,7 +4,8 @@ import { cart} from './cart.js'
 import { pagination } from './paginations.js'
 
 export const db = {
-    items: window.localStorage.getItem('products') ? JSON.parse(window.localStorage.getItem('products')) : items,
+    items: (window.localStorage.getItem('products') && JSON.stringify(window.localStorage.getItem('products')) === JSON.stringify(items)) ? JSON.parse(window.localStorage.getItem('products')) : items,
+    
     methods: {
         find: function(id, ...productlist) {
             // Verificar si productlist no está definido o está vacío
