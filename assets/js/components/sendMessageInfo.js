@@ -7,6 +7,9 @@ export const sendMessage = () => {
         const data = leerLocalStorage()
         const totalCart = data.totalCart
         const products = data.productsCart
+        const EditPlates =document.getElementById("textoEdit")
+        const textEdit = (EditPlates.value) ? EditPlates.value: "Sin Ediciones"
+        const mediosPago = "Pago movil Provincial: 04128757762, 28.153.152 💵 "
         let textoProducto = ""
         let counterProduct = Math.round(Math.random() * 2557)
 
@@ -20,7 +23,7 @@ export const sendMessage = () => {
             counterProduct++
         })
 
-        let mensage = `Orden N°: ${counterProduct} \n \n Hola Te Saluda Palerossi \n \n Tipo de servicio: Compra \n \n Estado del pago: No Pagado \n \n Descripcion: 📝\n ${textoProducto} \n \n Total Compra: $${totalCart} \n \n Gracias por comprar con nosotros enseguida te atenderemos.` 
+        let mensage = `Orden N°: ${counterProduct} \n \n Hola Te Saluda Palerossi👋 \n \n Tipo de servicio: Compra🛒\n \nMedios de Pago: ${mediosPago}💰💸 \n \n Descripcion: 📝\n ${textoProducto} \n \n Total Compra: $${totalCart}💵 \n \nLa Orden tiene las Siguientes Ediciones: \n \n${textEdit}📝 \n \n Gracias por comprar con nosotros enseguida te atenderemos🕦.` 
 
         const tlf = '573502117928'
 

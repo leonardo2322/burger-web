@@ -6,7 +6,6 @@
     --text-color:#0D0D0D;
     --hover-btn:#A3BD9D;
   }
-
 body{
     background-color: #eee9e9;
 }
@@ -175,7 +174,38 @@ body{
 .nav .items .item:hover {
     border-color: var(--border-color);
 }
+/* input text area */
+.editProductbox{
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ justify-content: center;
+}
+.editProductbox label{
+    color: #eee9e9;
+    font-size: 1.1rem;
 
+}
+.editProductbox .LABELDIV{
+    margin-bottom: 1rem;
+
+    background:#c44a4a ;
+}
+#textoEdit{
+    cursor: pointer;
+    padding: 10px; /* Espacio interno para el texto dentro del textarea */
+  border: 1px solid #f80f0f; /* Borde del textarea */
+  border-radius: 5px; /* Bordes redondeados */
+  font-size: 14px; /* Tamaño de la fuente */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Sombra suave */
+  resize: vertical; /* Permite redimensionar verticalmente */
+  min-height: 100px; /* Altura mínima */
+  width: 100%; /* Ancho completo del contenedor */
+}
+#textoEdit:focus {
+    outline: none; /* Quita el contorno al enfocar */
+    border-color: #eca03b; /* Cambia el color del borde al enfocar */
+  }
 /* buttons badges */
 #button_badge,
 #button_badge:focus {
@@ -650,7 +680,7 @@ body{
 .modal-select .addCartSelect {
     width: 100%;
     padding: 10px;
-    background: rgb(15, 145, 73) ;
+    background: rgb(15, 145, 73);
     border-radius: 10px;
     transition: background .3s ease;
 }
@@ -677,6 +707,7 @@ body{
 .shortcuts {
     width: 100%;
     height: auto;
+    margin-top: 78em;
     border: 1px solid var(--border-color);
     color: var(--text-color);
     margin-bottom: 52px;
@@ -1208,7 +1239,7 @@ body{
 }
 @media (min-width: 300px) {
     .shortcuts{
-        margin-top: 80em;
+        margin-top: 77em;
     }
     .modal-select{
         top: 1.5rem;
