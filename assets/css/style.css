@@ -704,6 +704,10 @@ body{
 
 
 /* ? Shortcuts*/
+#inforGeneral{
+    margin-top: 0;
+    font-size: 1rem;
+}
 .shortcuts {
     width: 100%;
     height: auto;
@@ -1123,7 +1127,7 @@ body{
 @media screen and (min-width: 992px) and (max-width: 1199px) {
     .wrapper{
         max-width:100%;
-        min-height: 1900px;
+        min-height: 700px;
     }
     .swiper-slide {
         min-height: 200px; /* Ajusta la altura mínima del contenedor del slide */
@@ -1158,7 +1162,10 @@ body{
 @media screen and (min-width: 1200px) and (max-width: 1919px) {
     .wrapper{
         max-width:100%;
-        min-height: 1900px;
+        min-height: 700px;
+    }
+    .shortcuts{
+        top: 100em;
     }
     .swiper-slide {
         min-height: 200px; /* Ajusta la altura mínima del contenedor del slide */
