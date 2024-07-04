@@ -9,7 +9,7 @@ export const sendMessage = () => {
         const products = data.productsCart
         const EditPlates =document.getElementById("textoEdit")
         const textEdit = (EditPlates.value) ? EditPlates.value: "Sin Ediciones"
-        const mediosPago = "Pago movil Provincial: 04128757762, 28.153.152 💵 "
+        const mediosPago = "Pago movil Provincial: 04128757762, C.I: 28.153.152 💵 "
         let textoProducto = ""
         let counterProduct = Math.round(Math.random() * 2557)
 

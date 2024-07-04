@@ -17,6 +17,7 @@ document.addEventListener('DOMContentLoaded', () => {
       // Si no existe en localStorage o es diferente, actualizamos localStorage
       localStorage.removeItem("products")
       localStorage.setItem('products', itemsJSON);
+      location.reload()
       console.log('Se ha actualizado el contenido de items en localStorage.');
     } else {
       // Si son iguales, no hacemos nada
